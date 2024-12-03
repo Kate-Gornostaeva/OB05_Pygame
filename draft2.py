@@ -50,10 +50,12 @@ def load_image(path):
 basket_image_path = "images/basket3.png"  # Укажите путь к изображению корзинки
 apple_image_path = "images/apple2.png"  # Укажите путь к изображению яблока
 other_image_path = "images/bomb.png"  # Укажите путь к изображению другого предмета
+background_image_path = "images/background.jpg"
 
 basket_image = load_image(basket_image_path)
 apple_image = load_image(apple_image_path)
 other_image = load_image(other_image_path)
+background_image = load_image(background_image_path)
 
 
 def spawn_item():
