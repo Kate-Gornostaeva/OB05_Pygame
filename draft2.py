@@ -6,7 +6,7 @@ import time
 pygame.init()
 
 # Настройки экрана
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Лови яблоки!")
 
@@ -103,7 +103,7 @@ def main():
         items.append(spawn_item())
 
     while running:
-        screen.fill(GREEN)
+
 
         # Обработка событий
         for event in pygame.event.get():
@@ -143,6 +143,7 @@ def main():
             items.append(spawn_item())
 
         # Отображение элементов на экране
+        screen.blit(background_image if background_image else WHITE, (0, 0))
         draw_basket()
         draw_items()
 
